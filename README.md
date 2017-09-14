@@ -9,9 +9,7 @@ Serão instalados o Apache, PHP, MySQL, phpMyAdmin, OpenSSL e tudo será
 configurado automaticamente, para isso basta instalar as dependêcias listadas
 abaixo, clonar este repositório e rodar o comando:
 
-    ```bash
     $ vagrant up
-    ```
 
 Dependência
 -----------
