@@ -12,6 +12,7 @@ export DEBIAN_FRONTEND=noninteractive
 case $1 in
 	ubuntu16.04) wget -qO /tmp/puppetlabs-release.deb https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb ;;
 	debian9.1) wget -qO /tmp/puppetlabs-release.deb https://apt.puppetlabs.com/puppetlabs-release-pc1-stretch.deb ;;
+	debian9.2) wget -qO /tmp/puppetlabs-release.deb https://apt.puppetlabs.com/puppetlabs-release-pc1-stretch.deb ;;
 	debian8.9) wget -qO /tmp/puppetlabs-release.deb https://apt.puppetlabs.com/puppetlabs-release-pc1-jessie.deb ;;
 	*) echo "Identificação de distribuição inválida: $1"; exit 1;;
 esac

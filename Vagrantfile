@@ -1,5 +1,5 @@
-# --- Distribuição escolhida: debian8.9; debian9.1 ou ubuntu16.04 ---
-DIST = "ubuntu16.04"
+# --- Distribuição escolhida: debian8.9; debian9.1; debian9.2 ou ubuntu16.04 ---
+DIST = "debian9.2"
 
 # --- IP da VM ---
 IP = "192.168.33.10"
@@ -10,6 +10,9 @@ Vagrant.configure(2) do |config|
     if DIST == "debian9.1"
         config.vm.box = "42tec/debian9.1"
         config.vm.box_url = "http://vagrant.42tec.com.br/debian9.1.box"
+    elsif DIST == "debian9.2"
+        config.vm.box = "42tec/debian9.2"
+        config.vm.box_url = "http://vagrant.42tec.com.br/debian9.2.box"
     elsif DIST == "debian8.9"
         config.vm.box = "42tec/debian8.9"
         config.vm.box_url = "http://vagrant.42tec.com.br/debian8.9.box"
